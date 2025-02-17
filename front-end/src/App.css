@@ -24,9 +24,96 @@
   color: white;
 }
 
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #007bff;
+}
+
+/* Card Styling */
+.card {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* List Group Item */
+.list-group-item {
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: scale(1.02);
+}
+
+/* Footer or Bottom Section */
+footer {
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+}
+
+/* Dark Mode */
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.text-dark {
+  color: #212529 !important;
+}
+
+
 .App-link {
   color: #61dafb;
 }
+/* Ensure Cards take full width on small screens */
+@media (max-width: 768px) {
+  .match-score-card, .friends-list, .favorite-teams {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .friends-list, .favorite-teams {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .match-score-card {
+    margin-left: 0 !important;
+  }
+}
+
 
 @keyframes App-logo-spin {
   from {
